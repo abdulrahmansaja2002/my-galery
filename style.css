@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+}
+body {
+  background: rgb(46, 44, 44);
+}
+.container {
+  border: 5px solid white;
+  width: 750px;
+  margin: 10px auto;
+  overflow: auto;
+}
+.screenFoto {
+  width: 750px;
+  /* transition: 0.5s; */
+}
+.foto {
+  width: 250px;
+  float: left;
+  border: 2px solid white;
+  box-sizing: border-box;
+}
+.foto:hover{
+  cursor: pointer;
+  opacity: .5;
+}
+@keyframes fadeIn {
+  /* membuat animasi dengan keyframes */
+  to { /* akhir dari keyframe*/
+    opacity: 1;
+  }
+}
+
+.fade {
+  opacity: 0.5; /* awal dari keyframe */
+  animation: fadeIn 0.5s forwards; /* forwads digunakan agar pas akhir tetap pada kondisinya*/
+}
+
+.active {
+  opacity: 0.5;
+}
